@@ -1,0 +1,9 @@
+<div class="notice">
+  <%= notice %>
+</div>
+
+<%= link_to 'Criar Exercicio', new_exercise_path %> 
+
+<% @exercises.each do |e| %>
+  <%= e.name %>
+<% end %>
